@@ -1,0 +1,117 @@
+section {
+  padding: 1.2rem 30px 0 30px;
+}
+
+.about {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(248, 249, 255);
+  box-shadow: 10px 10px 20px 10px rgba(1, 1, 1, 0.5);
+  padding: 3.8rem 0;
+}
+
+.aboutimage {
+  width: 22em;
+  height: 22em;
+  box-shadow: rgba(249, 249, 255, 0.788) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 50%;
+}
+
+.pro {
+  width: 30%;
+  padding: 2rem 0;
+}
+
+.info {
+  width: 50%;
+  padding: 2rem 0;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.resume {
+  width: 10em;
+  height: 3em;
+  padding: 6px;
+  margin: 2rem 0 0 0;
+  border: none;
+  border-radius: 2em;
+  background-color: rgb(246, 250, 255);
+  box-shadow: 3px 3px 15px rgba(21, 21, 21, 0.1);
+  transition: all 0.3s ease;
+}
+
+.resumeDownload {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resume:hover {
+  background-color: rgb(16, 13, 33);
+}
+
+.resumeDownload:hover {
+  color: white;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 15px; /* Adds spacing between social buttons */
+}
+
+.btns {
+  border: none;
+  font-size: 24px;
+  padding: 5px;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Corrected border-radius */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btns:hover {
+  transform: scale(1.1); /* Adds a zoom effect on hover */
+}
+
+.w {
+  background-color: rgb(49, 216, 63);
+}
+
+.i {
+  background-color: coral;
+}
+
+.y {
+  background-color: rgb(224, 31, 66);
+}
+.m {
+  background-color: rgb(17, 86, 205);
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.socials a:hover {
+  opacity: 0.8;
+}

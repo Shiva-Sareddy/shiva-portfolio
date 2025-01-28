@@ -1,0 +1,23 @@
+.skills {
+  height: auto;
+  padding: 3.8rem 0;
+  background-color: rgb(236, 231, 255);
+}
+.skillsection {
+  margin: 4rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  column-gap: 4rem;
+  row-gap: 6rem;
+}
+
+.skill {
+  width: 8rem; /* Adjust the size of the image */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.3s ease; /* Hover zoom effect */
+}
+
+.skill:hover {
+  transform: scale(1.1); /* Smooth zoom on hover */
+}

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 
+ * Navigation Bar
+ */
+
+header {
+    height: 60px;
+    box-shadow: 5px 5px 20px rgba(210, 210, 210, 0.5);
+    position: fixed; /* Makes the header fixed at the top */
+    top: 0; /* Ensures it sticks to the top of the viewport */
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width */
+    z-index: 1000; /* Places the header above other content */
+    background-color: white; /* Adds a background color to avoid content overlap */
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.linkElements,
+.linkElementContact {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.logo {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.profiles {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profiles div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.fa-brands {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.g {
+    background-color: rgb(12, 11, 30);
+}
+
+.l {
+    background-color: rgb(47, 143, 234);
+}
+/* 
+.y {
+  background-color: rgb(224, 31, 66);
+}  */
+
+.linkElements:hover {
+    color: rgb(47, 143, 234);
+}
+
+.linkElementContact:hover {
+    color: rgb(224, 31, 66);
+}
+
+/* 
+ * Nav bar ENDS
+ */

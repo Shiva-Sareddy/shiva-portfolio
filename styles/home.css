@@ -1,0 +1,102 @@
+/* Your existing CSS */
+.item00 {
+    background: linear-gradient(
+            90deg,
+            rgba(47, 194, 247, 1) 0%,
+            rgba(87, 199, 197, 1) 0%,
+            rgba(83, 27, 250, 1) 100%
+        )
+        no-repeat center center/cover;
+    height: 100vh;
+}
+.item01 {
+    background: linear-gradient(
+            90deg,
+            rgba(247, 104, 47, 1) 34%,
+            rgba(250, 157, 27, 1) 100%
+        )
+        no-repeat center center/cover;
+    height: 100vh;
+}
+.item02 {
+    background: linear-gradient(
+            90deg,
+            rgba(97, 235, 47, 1) 38%,
+            rgba(161, 240, 161, 1) 100%
+        )
+        no-repeat center center/cover;
+    height: 100vh;
+}
+.carousel-caption {
+    top: 43%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* FIXED CSS - Convert Bootstrap carousel indicators to proper circular dots */
+.carousel-indicators {
+    bottom: 30px;
+    margin-bottom: 0;
+    gap: 10px;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-indent: 0 !important;
+    transition: all 0.3s ease !important;
+    opacity: 1 !important;
+    flex: none !important;
+}
+
+.carousel-indicators button.active {
+    background-color: rgba(255, 255, 255, 1) !important;
+    transform: scale(1.2) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+.carousel-indicators button:hover {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.carousel-indicators button:before,
+.carousel-indicators button:after {
+    display: none !important;
+}
+
+/* Remove any Bootstrap default styles that might interfere */
+.carousel-indicators button {
+    text-indent: -999px !important;
+    overflow: hidden !important;
+    background-clip: padding-box !important;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .carousel-indicators {
+        bottom: 20px;
+        gap: 8px;
+    }
+
+    .carousel-indicators button {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-indicators {
+        bottom: 15px;
+        gap: 6px;
+    }
+
+    .carousel-indicators button {
+        width: 8px !important;
+        height: 8px !important;
+    }
+}
